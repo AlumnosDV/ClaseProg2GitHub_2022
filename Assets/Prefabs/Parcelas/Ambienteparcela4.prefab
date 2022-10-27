@@ -97,7 +97,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 7.277631
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -185,4 +185,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf9adff0f0e8b6d4ea6cca33c13b173e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _myAudio: {fileID: 0}
+  _myAudio: {fileID: 215825962216100479}
