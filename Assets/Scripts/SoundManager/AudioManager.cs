@@ -5,10 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    public AudioManager instance;
+    public static AudioManager instance;
 
     [SerializeField]
-    private AudioSource audioSource;
+    public AudioSource audioSource;
 
     public void PlayAudio(AudioClip clip)
     {
