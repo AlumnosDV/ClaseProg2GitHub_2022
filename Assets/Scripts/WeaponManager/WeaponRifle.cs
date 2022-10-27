@@ -11,6 +11,16 @@ public class WeaponRifle : WeaponBase
     [SerializeField]
     private float _distance;
 
+    public override void OnActive()
+    {
+        //te rompo el codigo
+    }
+
+    public override void OnDeactive()
+    {
+        //aca tambien
+    }
+
     protected override void OnPressDown()
     {
         RaycastHit hit;
@@ -27,6 +37,8 @@ public class WeaponRifle : WeaponBase
         }
 
     }
+
+
 
     protected override void OnPressUp()
     {
