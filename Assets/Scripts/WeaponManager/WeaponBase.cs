@@ -6,6 +6,9 @@ public abstract class WeaponBase : MonoBehaviour
 {
     bool isPressed = false;
 
+    public abstract void OnActive();
+    public abstract void OnDeactive();
+
     public void PressDown()
     {
         isPressed = true;

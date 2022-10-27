@@ -4,6 +4,16 @@ using UnityEngine;
 
 public class WeaponPistol : WeaponBase
 {
+    public override void OnActive()
+    {
+        
+    }
+
+    public override void OnDeactive()
+    {
+        
+    }
+
     protected override void OnPressDown()
     {
         
