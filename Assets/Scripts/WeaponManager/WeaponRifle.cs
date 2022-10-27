@@ -18,12 +18,14 @@ public class WeaponRifle : WeaponBase
 
     public override void OnDeactive()
     {
-        //aca tambien
+        //Dejo de hacer ruidos de rifle
     }
 
     protected override void OnPressDown()
     {
         RaycastHit hit;
+
+        OnActive();
 
         if (Physics.Raycast(_shootPoint.position, _shootPoint.forward, out hit, _distance))
         {
@@ -31,18 +33,17 @@ public class WeaponRifle : WeaponBase
 
             if(damageable != null)
             {
-                Debug.Log("Le pegué");
-            }
-            
+                Debug.Log("Le peguï¿½");
+            }            
         }
-
     }
 
 
 
     protected override void OnPressUp()
     {
-        Debug.Log("No pego más");
+        Debug.Log("No pego mï¿½s");
+        OnDeactive();   
     }
 
     protected override void OnTickPressed(float DeltaTime)
