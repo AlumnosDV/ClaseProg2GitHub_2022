@@ -440,6 +440,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5218332453391747697}
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ParticleScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 215671391711504910, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3143954623338694447, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -546,7 +574,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayButton
+      value: GameScene
       objectReference: {fileID: 0}
     - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
