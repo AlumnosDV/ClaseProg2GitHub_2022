@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    public void PlayButton()
+    public void GameScene()
     {
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void ParticleScene()
+    {
+        SceneManager.LoadScene("particleTest");
     }
 }
