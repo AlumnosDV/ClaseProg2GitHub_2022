@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    WeaponBase[] myWeapons = new WeaponBase[0];
-    WeaponBase current;
+    [SerializeField] WeaponBase[] myWeapons = new WeaponBase[0];
+    [SerializeField] WeaponBase current;
     int index = 0;
 
     private void Awake()
