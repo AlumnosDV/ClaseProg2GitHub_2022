@@ -422,6 +422,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 557a862585dc3cd42a622534f1fa9b96, type: 3}
+--- !u!114 &5218332453391747697 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5218332453049644158, guid: 557a862585dc3cd42a622534f1fa9b96, type: 3}
+  m_PrefabInstance: {fileID: 5218332453391747696}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe37bd5663cd847428c9045e2d1c06a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5795554765245920403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -516,6 +527,34 @@ PrefabInstance:
     - target: {fileID: 3358561854221414513, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
       propertyPath: m_Name
       value: CanvasMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5218332453391747697}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5543743688167488864, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ff140fa05bdb604a92fdc3c8e8e726c, type: 3}
