@@ -62,12 +62,21 @@ public class EnemyConcrete : EnemyAgent
     }
 
 
-    protected override void OnDeath() { }
-    protected override void OnRefresh(float val) { }
+    protected override void OnDeath() 
+    {
+        print("La muerte del enemigo conctreto");
+    }
+    protected override void OnRefresh(float val) 
+    {
+        print("Enemey mele zaraza fulano");
+    }
     protected override void OnTakeDamage() 
     {
         anim_dmg = true;
     }
 
-    
+    protected override void OnHeal()
+    {
+       
+    }
 }

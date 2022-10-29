@@ -7,8 +7,9 @@ public class LifeComponent
 {
     int life = 0;
     int life_max = 0;
-    Action callback_death;
+    Action callback_death; 
     Action<float> callback_refresh;
+    Action callbackHeal;
 
     public LifeComponent(int life, int life_max)
     {
@@ -21,10 +22,11 @@ public class LifeComponent
         this.life_max = life_max;
     }
 
-    public void Configure(Action _cbk_death, Action<float> _cbk_refresh)
+    public void Configure(Action _cbk_death, Action<float> _cbk_refresh, Action onHeal)
     {
         callback_death = _cbk_death;
         callback_refresh = _cbk_refresh;
+        callbackHeal = onHeal;
         Refresh();
     }
 
@@ -58,6 +60,10 @@ public class LifeComponent
         if (life > life_max)
         {
             life = life_max;
+        }
+        else
+        {
+            callbackHeal.Invoke();
         }
         Refresh();
     }

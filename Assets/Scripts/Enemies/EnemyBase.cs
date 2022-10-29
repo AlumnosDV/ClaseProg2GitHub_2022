@@ -17,9 +17,14 @@ public abstract class EnemyBase : MonoBehaviour
     void Awake()
     {
         lifeComponent = new LifeComponent(lifemax);
-        lifeComponent.Configure(Death, Refresh);
+        lifeComponent.Configure(Death, Refresh, OnHeal);
     }
 
+
+    void Heal()
+    {
+
+    }
     public void Hit(int damage) 
     {
         if (lifeComponent.Hit(damage))
@@ -27,7 +32,10 @@ public abstract class EnemyBase : MonoBehaviour
             OnTakeDamage();
         }
     }
-    void Death() => OnDeath();
+    void Death() 
+    {
+        OnDeath();
+    }
     void Refresh(float val) 
     {
         lifefillui.fillAmount = val;
@@ -37,4 +45,5 @@ public abstract class EnemyBase : MonoBehaviour
     protected abstract void OnDeath();
     protected abstract void OnRefresh(float val);
     protected abstract void OnTakeDamage();
+    protected abstract void OnHeal();
 }

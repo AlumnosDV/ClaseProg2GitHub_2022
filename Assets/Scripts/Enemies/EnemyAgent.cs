@@ -14,4 +14,9 @@ public abstract class EnemyAgent : EnemyBase
     {
         nav.destination = pos;
     }
+
+    protected void ShutDownNavMesh()
+    {
+        nav.enabled = false;
+    }
 }
