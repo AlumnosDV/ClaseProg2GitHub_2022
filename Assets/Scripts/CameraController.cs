@@ -4,18 +4,35 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-
+    [SerializeField] Transform targetOverride;
     Vector3 offset;
 
     [Range(1,6)][SerializeField] float cameraspeed;
 
     void Start()
     {
-        offset = GameManager.GetPlayer().transform.position - this.transform.position;
+        if (targetOverride != null)
+        {
+            offset = targetOverride.position - this.transform.position;
+        }
+        else
+        {
+            offset = GameManager.GetPlayer().transform.position - this.transform.position;
+        }
+
     }
     void LateUpdate()
     {
-        Vector3 final = GameManager.GetPlayer().transform.position - offset;
-        transform.position = Vector3.Slerp(transform.position, final, cameraspeed * Time.deltaTime);
+        if (targetOverride != null)
+        {
+            Vector3 final = targetOverride.position - offset;
+            transform.position = Vector3.Slerp(transform.position, final, cameraspeed * Time.deltaTime);
+        }
+        else
+        {
+            Vector3 final = GameManager.GetPlayer().transform.position - offset;
+            transform.position = Vector3.Slerp(transform.position, final, cameraspeed * Time.deltaTime);
+        }
+       
     }
 }
